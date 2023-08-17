@@ -1,0 +1,227 @@
+.contact {
+    height: 100vh;
+    border: 1px solid black;
+    background-color: #2F2E2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.contact img {
+    height: 60px;
+    transition: 0.15s ease;
+}
+
+.contact img:hover {
+    border: 5px solid #AFEB8F;
+    border-radius: 50%;
+}
+
+.reach-out {
+    color: white;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.contact-details p:first-child {
+    font-size: 50px;
+    font-weight: 800;
+    padding: 0px 0px 30px 0px;
+    color: #AFEB8F;
+}
+
+.contact-details p {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.contact-links p:first-child {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.contact-links p:last-child {
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    padding: 5px 45px;
+    border-radius: 20px;
+    border: 1px solid #AFEB8F;
+    background-color: #AFEB8F;
+    transition: 0.15s ease;
+    cursor: pointer;    
+}
+
+.contact-links p:last-child:hover {
+    background-color: #2F2E2D;
+    border: 1px solid white;
+
+}
+
+.link-list-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.btn-up-contact:hover {
+    background-color: #AFEB8F;
+    background-image: url("/images/up-arrow.png");
+}
+
+.contact-links a:link, .contact-links a:visited, .contact-links a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive Media Queries*/
+
+@media only screen and (max-width: 950px) {
+    .reach-out {
+        color: white;
+        font-size: 100px;
+        font-weight: 700;
+    }
+    .contact img {
+        height: 50px;
+    }
+    .contact-details p:first-child {
+        font-size: 40px;
+        font-weight: 800;
+        padding: 0px 0px 30px 0px;
+        color: #AFEB8F;
+    }
+    
+    .contact-details p {
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 15px;
+        align-items: center;
+        height: 200px;
+    }
+
+    .link-list-container {
+        justify-content: space-around;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .contact-links p:first-child {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .contact-links p:last-child {
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        padding: 5px 45px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .reach-out {
+        color: white;
+        font-size: 75px;
+        font-weight: 700;
+    }
+    .contact img {
+        height: 35px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+    }
+    
+    .contact-details p:first-child {
+        font-size: 30px;
+        font-weight: 800;
+        padding: 0px 0px 30px 0px;
+        color: #AFEB8F;
+    }
+    
+    .contact-details p {
+        font-size: 15px;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        align-items: center;
+        height: 200px;
+    }
+
+    .link-list-container {
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+    }
+    
+    .contact-links p:first-child {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .contact-links p:last-child {
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+        padding: 5px 20px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .reach-out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 55px;
+        flex: 1;
+    }
+
+    .contact-container {
+        flex: 2;
+        justify-content: flex-start;
+
+    }
+    .contact-details p:first-child {
+        padding: 0px 0px 10px 0px;
+    }
+    
+}

@@ -1,0 +1,365 @@
+.education-experience {
+    height: 100vh;
+    position: relative;
+    background-color: #2F2E2D;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/dark-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.education {
+    flex: 0.4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.education p {
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.course {
+    border: 1px solid white;
+    border-radius: 60px;
+    background-color: white;
+    width: 500px;
+}
+
+.course p {
+    color: #2F2E2D;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 25px 50px;
+}
+
+.course p:last-child {
+    color: #2F2E2D;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience {
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+}
+
+.xp-cards {
+    width: 450px;
+    height: 200px;
+    border-radius: 60px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px 5px 5px 50px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.xp-cards p:first-child {
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.xp-cards p:last-child {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.btn-up-education:hover {
+    background-color: #EEDB42;
+    background-image: url("/images/up-arrow-white.png");
+}
+
+.btn-down-education:hover {
+    background-color: #AFEB8F;
+    background-image: url("/images/down-arrow-white.png");
+}
+
+/* Responsive Media Queries*/
+
+@media only screen and (max-width: 1500px) {
+    .education p {
+        font-size: 70px;
+        font-weight: 800;
+    }
+    
+    .course {
+        border-radius: 60px;
+        width: 450px;
+    }
+
+    .course p {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 25px 50px;
+    }
+    .xp-cards {
+        width: 400px;
+        height: 180px;
+        border-radius: 60px;
+        padding: 5px 5px 5px 50px;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    
+    .xp-cards p:first-child {
+        font-weight: 800;
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+    
+    .xp-cards p:last-child {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 1332px) {
+    .education p {
+        font-size: 60px;
+        font-weight: 800;
+    }
+    
+    .course {
+        border-radius: 60px;
+        width: 450px;
+        height: 160px;
+        line-height: 1;
+    }
+
+    .course p {
+        font-size: 23px;
+        font-weight: 600;
+        padding: 25px 50px;
+    }
+    .xp-cards {
+        text-align: center;
+        width: 300px;
+        height: 180px;
+        border-radius: 60px;
+        padding: 5px 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .xp-cards p:first-child {
+        font-weight: 800;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    
+    .xp-cards p:last-child {
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .education {
+        flex-direction: column;
+    }
+
+    .education p {
+        font-size: 55px;
+        font-weight: 800;
+    }
+    
+    .course {
+        border-radius: 60px;
+        width: 500px;
+        height: 120px;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .course p {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px 30px;
+    }
+
+    .course p:last-child {
+        color: #2F2E2D;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .experience {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .xp-cards {
+        text-align: center;
+        width: 500px;
+        height: 120px;
+        border-radius: 60px;
+        margin: 15px;
+        padding: 5px 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .xp-cards p:first-child {
+        font-weight: 800;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    
+    .xp-cards p:last-child {
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .education p {
+        font-size: 55px;
+        font-weight: 800;
+    }
+    
+    .course {
+        width: 450px;
+        height: 120px;
+    }
+
+    .course p {
+        font-size: 17px;
+        padding: 5px 30px;
+    }
+
+    .course p:last-child {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .xp-cards {
+        width: 450px;
+        height: 120px;
+        margin: 15px;
+        padding: 5px 15px;
+        font-size: 17px;
+    }
+    
+    .xp-cards p:first-child {
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+    
+    .xp-cards p:last-child {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .education p {
+        font-size: 35px;
+    }
+    
+    .course {
+        width: 350px;
+        height: 90px;
+    }
+
+    .course p {
+        font-size: 14px;
+        padding: 5px 30px;
+    }
+
+    .course p:last-child {
+        font-size: 12px;
+    }
+
+    .xp-cards {
+        text-align: center;
+        width: 350px;
+        height: 90px;
+        margin: 15px;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    
+    .xp-cards p:first-child {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    
+    .xp-cards p:last-child {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .education p {
+        font-size: 33px;
+    }
+    
+    .course {
+        width: 330px;
+        height: 80px;
+    }
+
+    .course p {
+        font-size: 13px;
+        padding: 5px 30px;
+    }
+
+    .course p:last-child {
+        font-size: 11px;
+    }
+
+    .xp-cards {
+        text-align: center;
+        width: 330px;
+        height: 80px;
+        margin: 15px;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    
+    .xp-cards p:first-child {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    
+    .xp-cards p:last-child {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-height: 668px) {
+    .experience {
+        margin-top: -16px;
+    }
+    .xp-cards {
+        margin: 10px;
+    }
+}
